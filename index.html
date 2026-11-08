@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hesap Makinesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Hesap makinesi">
+    <header><span class="badge" role="button" tabindex="0" aria-label="Maskota tıkla"><img id="mascot" src="frog.svg" alt="Kurbağa maskotu"></span><div class="brand"><h1>Hesap Makinesi</h1><span id="brand-subtitle">Kurbağa bile hesaplıyor.</span></div></header>
+    <div id="easter-egg" class="egg-pop" role="status" aria-live="polite" hidden></div>
+    <section class="display" aria-label="Ekran">
+      <div id="expression" class="expression">İşlem yapmaya başlayın</div>
+      <output id="result" aria-live="polite">0</output>
+    </section>
+    <div class="keys">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="sign" aria-label="İşareti değiştir">±</button>
+      <button class="utility" data-action="percent" aria-label="Yüzde">%</button>
+      <button class="operator" data-operator="/" aria-label="Böl">÷</button>
+      <button data-digit="7">7</button><button data-digit="8">8</button><button data-digit="9">9</button>
+      <button class="operator" data-operator="*" aria-label="Çarp">×</button>
+      <button data-digit="4">4</button><button data-digit="5">5</button><button data-digit="6">6</button>
+      <button class="operator" data-operator="-" aria-label="Çıkar">−</button>
+      <button data-digit="1">1</button><button data-digit="2">2</button><button data-digit="3">3</button>
+      <button class="operator" data-operator="+" aria-label="Topla">+</button>
+      <button data-action="backspace" aria-label="Son rakamı sil">⌫</button><button data-digit="0">0</button>
+      <button data-action="decimal" aria-label="Ondalık virgül">,</button>
+      <button class="equals" data-action="equals" aria-label="Sonuç">=</button>
+    </div>
+    <footer id="quip" aria-live="polite">Klavyenizi kullanabilirsiniz · Enter = sonuç</footer>
+  </main>
+  <script src="calculator.js"></script>
+</body>
+</html>
+
